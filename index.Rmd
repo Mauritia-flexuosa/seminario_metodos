@@ -293,6 +293,8 @@ https://www.nature.com/articles/sdata201566
 
 [Mapbiomas](https://mapbiomas.org/)
 
+https://mauritia-flexuosa.github.io/fire_freq_pncv/
+
 .center[<img width="50%" src="https://mapbiomas-br-site.s3.amazonaws.com/mapbiomas-brasil-logo-horizontal-v2.png"/>]
 
 .center[<img width="70%" src="https://mapbiomas-br-site.s3.amazonaws.com/Infograficos/Coleção6/MBI-Infografico-6.0-PTBR-brasil.jpg"/>]
