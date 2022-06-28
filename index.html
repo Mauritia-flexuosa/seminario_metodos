@@ -4,7 +4,7 @@
     <title>Métodos em Ecologia</title>
     <meta charset="utf-8" />
     <meta name="author" content="Marcio Baldissera Cure" />
-    <meta name="date" content="2022-06-27" />
+    <meta name="date" content="2022-06-28" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
@@ -15,6 +15,15 @@
     <script src="libs/tiny.toast/toast.min.js"></script>
     <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet/leaflet.js"></script>
+    <link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="libs/proj4/proj4.min.js"></script>
+    <script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-binding/leaflet.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -24,7 +33,7 @@ class: center, middle, inverse, title-slide
 ## Resiliência Ecológica: métodos de inferência
 ### Marcio Baldissera Cure
 ### Doutorando - PPG Ecologia UFSC
-### 2022-06-27
+### 2022-06-28
 
 ---
 
@@ -35,14 +44,18 @@ class: center, middle, inverse, title-slide
 
 
 
+background-image: url("IMG-20210726-WA0043.jpg")
 
 # Sumário
-
+#####Apresentação disponível em &lt;a&gt;https://mauritia-flexuosa.github.io/seminario_metodos&lt;/a&gt;
 ![]("/home/marcio/Downloads/IMG-20210726-WA0043.jpg")
 
 1. Sistemas complexos e dinâmicos
 2. Resiliência ecológica
-3. 
+3. Inferindo resiliência: exemplos
+4. Exemplo do meu estudo
+-  a) Dados de campo
+- b) Dados de satélite
 
 ---
 class: top, center
@@ -97,24 +110,33 @@ class: top, left
 
 - Capacidade que os sistemas possuem de absorver impactos antes de colapsar para um estado alternativo de funcionamento
 
-- Estados alternativos
-
 - Capacidade de auto organização de um sistema (feedbacks)
 
 .center[
-&lt;img width="43%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Buzz_Holling.jpg/220px-Buzz_Holling.jpg"/&gt;
-
+&lt;img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Buzz_Holling.jpg/220px-Buzz_Holling.jpg"/&gt;
 C. S. Holling]
 
 Resilience and Stability of Ecological Systems (1973):  https://www.annualreviews.org/doi/10.1146/annurev.es.04.110173.000245
 ---
 background-image: url("https://www.ecologyandsociety.org/vol17/iss4/art48/figure2.jpg")
 
-# Possibilidade de estados alternativos
-
-https://github.com/Mauritia-flexuosa/seminario_metodos.git
+# Pressuposto: estados alternativos
 
 ---
+
+# Identidade dos sistemas: variável de estado
+
+.center[
+&lt;img width="73%" src="saara.png"/&gt;
+
+&lt;img width="33%" src="https://ichef.bbci.co.uk/news/768/cpsprodpb/959D/production/_112610383_017531205-1.jpg"/&gt;
+&lt;img width="33%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg/1024px-Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg"/&gt;
+
+]
+
+
+---
+
 # Estados alternativos
 
 - Variável de estado
@@ -123,19 +145,6 @@ https://github.com/Mauritia-flexuosa/seminario_metodos.git
 
 .center[
 &lt;img width="65%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10750-007-0616-7/MediaObjects/10750_2007_0616_f1.gif?as=webp"/&gt;
-]
-
-
----
-
-# Identidade dos sistemas
-
-.center[
-&lt;img width="73%" src="/saara.png"/&gt;
-
-&lt;img width="33%" src="https://ichef.bbci.co.uk/news/768/cpsprodpb/959D/production/_112610383_017531205-1.jpg"/&gt;
-&lt;img width="33%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg/1024px-Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg"/&gt;
-
 ]
 
 
@@ -167,6 +176,170 @@ Substituição de tempo por espaço.
 
 *Xu et al (2016) - Ecology*]
 
+---
+# Usando outras variáveis de estado 
+
+.center[&lt;img width="27%" src="dantas20215_fig_1.png"/&gt;
+
+*Dantas et al (2015) - Ecology*]
+
+---
+background-image: url("IMG-20210801-WA0031.jpg")
+# Exemplo do meu estudo
+
+## Florestas e savannas na mesma paisagem são estados alternativos? ( **dados de campo** e **dados de satélite**)
+
+### Variáveis de estado são diferentes?
+
+### Estão sob as mesmas condições ambientais?
+---
+# Local
+
+<div id="htmlwidget-89fe957c20b79a2e6827" style="width:80%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-89fe957c20b79a2e6827">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[-14.0285,-47.4],9,[]]},"evals":[],"jsHooks":[]}</script>
+
+---
+### Parque Nacional da Chapada dos Veadeiros
+
+#### Primeiro desafio: **Seleção dos pontos amostrais**
+
+.center[&lt;img width="100%" src="mapa_A_B.png"/&gt;]
+
+--
+Aleatorizei pontos dentro do PNCV e selecionei por cobertura do dossel.
+
+---
+ # Sobre as parcelas
+ 
+ - Qual tamanho de parcela é ideal?
+ 
+.center[ &lt;img width="40%" src="IMG_20190420_103919(1).jpg"/&gt;
+  &lt;img width="40%" src="IMG_20190416_131402.jpg"/&gt;]
+
+--
+
+E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores diferentes?
+---
+
+# Dados de Campo
+
+## Preparação antes do campo
+
+- Exemplo: Para marcar as árvores
+
+&lt;img width="50%" src="20210724_154346.jpg"/&gt;&lt;img width="50%" src="IMG-20210724-WA0033.jpeg"/&gt;
+---
+# Coleta de solo para análise: Caracterizar ambiente
+
+- Solo (Análise na UFV)
+
+.center[&lt;img width="47%" src="IMG-20210715-WA0034.jpg"/&gt;]
+
+---
+# Padronizações são feitas pra usar na gringa
+
+.center[ &lt;img width="90%" src="newhandbook.png"/&gt;]
+
+--
+
+- Eu poderia ter usado a curva de rarefação pra determinar o número de parcelas ou o tamanho do transecto.
+
+--
+
+- Mas nós determinamos 10 parcelas pra cada tipo de vegetação.
+
+---
+# Dados de campo
+
+- Florística (identificação das espécies)
+
+.center[
+&lt;img width="40%" src="IMG-20210715-WA0036.jpg"/&gt;&lt;img width="30%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-OI-c5JcqaWVrplfU-0BlMBnZIiQ0uWgPgJPMNtKyQKAnmjZUNnVWrYehMeqFuTr&amp;usqp=CAU"/&gt;]
+
+
+
+---
+# Dados de Campo
+
+- Atributos: altura da árvore, WD, SLA, BT, BA
+
+ .center[
+&lt;img width="40%" src="IMG_20190423_113944.jpg"/&gt;
+&lt;img width="40%" src="WhatsApp Image 2022-06-27 at 14.38.47.jpeg"/&gt;]
+
+---
+# Cuidados e preparação dos dados de campo
+- Fazer outros tratamentos
+- Planilhar
+- Análises
+
+&lt;img width="23%" src="IMG_20190416_135759.jpg"/&gt;
+&lt;img width="25%" src="IMG_20190416_135616.jpg"/&gt;
+&lt;img width="50%" src="IMG_20190421_210646.jpg"/&gt;
+
+---
+# Dados remotos
+
+
+.center[&lt;img width ="30%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_R_xg1jw0tTuYkEJEqt6qfgnkSpYxRq6WB42HuzvwfdmK05hc0ILzF2rTXY6TGeRHZq8&amp;usqp=CAU"/&gt;&lt;img width="70%" src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/Landsat%208 band designations.jpg"/&gt;]
+
+---
+# Acesso aos dados de satélite
+[Earth Explorer](https://earthexplorer.usgs.gov/)
+
+
+&lt;img width="100%" src="https://www.researchgate.net/profile/Ragnvald-Larsen/publication/260870761/figure/fig4/AS:613909392265222@1523378813205/USGS-Earth-Explorer-user-interface.png"/&gt;
+
+---
+# Acesso aos dados de satélite
+
+[Google Earth Engine](code.earthengine.google.com/)
+
+.center[&lt;img width="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNCq3LJen6XMTt5daBaH26a4OlEJwAvyyJmEhCoh4mReipCWU1QYaPjC3B0sV9R5zKwLo&amp;usqp=CAU"/&gt;]
+
+---
+# Acesso aos dados de satélite
+
+- [Pacote geextract do Python](http://www.loicdutrieux.net/landsat-extract-gee/introduction.html)
+
+&lt;img width="30%" src="https://miro.medium.com/max/1183/1*X_G7j5snaH4mRnTGLcNaQg.png"/&gt;
+
+--
+- E tem esse outro tb:
+
+&lt;img width="90%" src="https://repository-images.githubusercontent.com/245837930/2a99eb00-1dd2-11eb-94bb-98ee2b8f5cc3"/&gt;
+
+
+---
+# Precipitação
+
+-  [CHIRPS](https://data.chc.ucsb.edu/products/CHIRPS-2.0/): precipitação
+
+.center[&lt;img width="90%" src="chirps.png"/&gt;]
+
+https://www.nature.com/articles/sdata201566
+
+
+---
+#  Campo vs Satélite
+ ### Exemplo: Cobertura do dossel
+
+
+.center[&lt;img width = "30%" src="WhatsApp Image 2022-06-28 at 14.58.01.jpeg"/&gt;&lt;img width="30%" src="WhatsApp Image 2022-06-28 at 14.58.01(1).jpeg"/&gt;
+]
+
+.center[&lt;img width="530" src="Figure_2.png"/&gt;]
+
+---
+# Obrigado pela atenção
+
+Laboratório IPES - Interdisciplinary Environmental Studies (Departamento de Física - UFSC)
+
+Email: &lt;marciobcure@gmail.com&gt;
+
+[GitHub](github.com/Mauritia-flexuosa)
+
+.center[&lt;img width="35%" src="ms2.jpeg"/&gt;]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
