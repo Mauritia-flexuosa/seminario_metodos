@@ -55,8 +55,8 @@ class: top, center
 
 .center[
 
-<img width="33%" src="https://m.media-amazon.com/images/I/51xgITnpd+L.jpg"/>
-<img width="55%" src="http://1.bp.blogspot.com/-ghv97fzjEvI/UoUfKNiguHI/AAAAAAAAAEw/iwRx7-lcY70/s200/johannes-kepler.jpg"/>
+<img width="30%" src="https://m.media-amazon.com/images/I/51xgITnpd+L.jpg"/>
+<img width="45%" src="http://1.bp.blogspot.com/-ghv97fzjEvI/UoUfKNiguHI/AAAAAAAAAEw/iwRx7-lcY70/s200/johannes-kepler.jpg"/>
 
 ]
 
@@ -71,7 +71,7 @@ class: top, left
 - Formado por múltiplos elementos que interagem entre si.
 ]
 
-<img width="63%" src="https://evgenii.com/image/blog/2018-09-27-three-body-problem-simulator/010_coordinate_system.png"/>
+<img width="53%" src="https://evgenii.com/image/blog/2018-09-27-three-body-problem-simulator/010_coordinate_system.png"/>
 
 
 *Modelos lineares não levam em conta interações*
@@ -84,7 +84,7 @@ class: top, left
 - Henri Poincaré: Informações a respeito do comportamento e propriedades de sistemas complexos.
 
 .center[
-<img width="63%" src="https://www.researchgate.net/profile/Rodrigo-Ricco/publication/309002188/figure/fig11/AS:670116907851787@1536779729797/Figura-6-Secao-de-Poincare-do-atrator-do-circuito-de-Roessler-afim-por-partes-para-o.jpg"/>
+<img width="53%" src="https://www.researchgate.net/profile/Rodrigo-Ricco/publication/309002188/figure/fig11/AS:670116907851787@1536779729797/Figura-6-Secao-de-Poincare-do-atrator-do-circuito-de-Roessler-afim-por-partes-para-o.jpg"/>
 ]
 ---
 # Ecosystemas são sistemas complexos e dinâmicos!
@@ -96,7 +96,7 @@ class: top, left
 - Capacidade de auto organização de um sistema (feedbacks)
 
 .center[
-<img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Buzz_Holling.jpg/220px-Buzz_Holling.jpg"/>
+<img width="26%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Buzz_Holling.jpg/220px-Buzz_Holling.jpg"/>
 C. S. Holling]
 
 Resilience and Stability of Ecological Systems (1973):  https://www.annualreviews.org/doi/10.1146/annurev.es.04.110173.000245
@@ -110,10 +110,10 @@ background-image: url("https://www.ecologyandsociety.org/vol17/iss4/art48/figure
 # Identidade dos sistemas: variável de estado
 
 .center[
-<img width="73%" src="saara.png"/>
+<img width="63%" src="saara.png"/>
 
-<img width="33%" src="https://ichef.bbci.co.uk/news/768/cpsprodpb/959D/production/_112610383_017531205-1.jpg"/>
-<img width="33%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg/1024px-Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg"/>
+<img width="30%" src="https://ichef.bbci.co.uk/news/768/cpsprodpb/959D/production/_112610383_017531205-1.jpg"/>
+<img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg/1024px-Libya_4985_Tadrart_Acacus_Luca_Galuzzi_2007.jpg"/>
 
 ]
 
@@ -127,44 +127,38 @@ background-image: url("https://www.ecologyandsociety.org/vol17/iss4/art48/figure
 - Condições ambientais
 
 .center[
-<img width="65%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10750-007-0616-7/MediaObjects/10750_2007_0616_f1.gif?as=webp"/>
+<img width="60%" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10750-007-0616-7/MediaObjects/10750_2007_0616_f1.gif?as=webp"/>
 ]
 
 
 ---
 # Indicadores de resiliência
 
-.center[<img width="80%" src="indicators.png"/>]
+.center[<img width="70%" src="indicators.png"/>]
 
 ---
 # E se eu não tiver série temporal?
 
 Substituição de tempo por espaço.
 
-.center[  <img width="70%" src="hirota2.png"/>
+.center[  <img width="60%" src="hirota2.png"/>
 
 *Hirota et al, 2011 - Science*]
 
 ---
 # Savannas e Florestas como estados alternativos
 
-.center[<img width="75%" src="hirota.jpg"/>
+.center[<img width="65%" src="hirota.jpg"/>
 
 *Hirota et al, 2011 - Science*]
 
 ---
 # Usando outras variáveis de estado 
 
-.center[<img width="50%" src="xu2016.png"/>
+.center[<img width="40%" src="xu2016.png"/><img width="27%" src="dantas20215_fig_1.png"/>
 
-*Xu et al (2016) - Ecology*]
+*Xu et al (2016) - Ecology*; *Dantas et al (2015) - Ecol letters*]
 
----
-# Usando outras variáveis de estado 
-
-.center[<img width="27%" src="dantas20215_fig_1.png"/>
-
-*Dantas et al (2015) - Ecology*]
 
 ---
 background-image: url("IMG-20210801-WA0031.jpg")
@@ -175,13 +169,6 @@ background-image: url("IMG-20210801-WA0031.jpg")
 ### Variáveis de estado são diferentes?
 
 ### Estão sob as mesmas condições ambientais?
----
-# Local
-
-```{r out.width='80%', fig.height=6, eval=require('leaflet'), include=TRUE, echo=FALSE, fig.align='center'}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-47.4, -14.0285, zoom = 9)
-```
 
 ---
 ### Parque Nacional da Chapada dos Veadeiros
@@ -208,9 +195,7 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 
 # Dados de Campo
 
-## Preparação antes do campo
-
-- Exemplo: Para marcar as árvores
+- Exemplo de preparação para marcar as árvores amostradas.
 
 <img width="50%" src="20210724_154346.jpg"/><img width="50%" src="IMG-20210724-WA0033.jpeg"/>
 ---
@@ -218,7 +203,7 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 
 - Solo (Análise na UFV)
 
-.center[<img width="47%" src="IMG-20210715-WA0034.jpg"/>]
+.center[<img width="37%" src="IMG-20210715-WA0034.jpg"/><img width="37%" src="WhatsApp Image 2021-07-15 at 17.06.39.jpeg"/>]
 
 ---
 # Padronizações são feitas pra usar na gringa
@@ -239,7 +224,7 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 - Florística (identificação das espécies)
 
 .center[
-<img width="40%" src="IMG-20210715-WA0036.jpg"/><img width="30%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-OI-c5JcqaWVrplfU-0BlMBnZIiQ0uWgPgJPMNtKyQKAnmjZUNnVWrYehMeqFuTr&usqp=CAU"/>]
+<img width="35%" src="IMG-20210715-WA0036.jpg"/><img width="30%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-OI-c5JcqaWVrplfU-0BlMBnZIiQ0uWgPgJPMNtKyQKAnmjZUNnVWrYehMeqFuTr&usqp=CAU"/>]
 
 
 
@@ -260,7 +245,7 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 
 <img width="23%" src="IMG_20190416_135759.jpg"/>
 <img width="25%" src="IMG_20190416_135616.jpg"/>
-<img width="50%" src="IMG_20190421_210646.jpg"/>
+<img width="45%" src="IMG_20190421_210646.jpg"/>
 
 ---
 # Dados remotos
@@ -273,7 +258,7 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 [Earth Explorer](https://earthexplorer.usgs.gov/)
 
 
-<img width="100%" src="https://www.researchgate.net/profile/Ragnvald-Larsen/publication/260870761/figure/fig4/AS:613909392265222@1523378813205/USGS-Earth-Explorer-user-interface.png"/>
+.center[<img width="80%" src="https://www.researchgate.net/profile/Ragnvald-Larsen/publication/260870761/figure/fig4/AS:613909392265222@1523378813205/USGS-Earth-Explorer-user-interface.png"/>]
 
 ---
 # Acesso aos dados de satélite
@@ -287,12 +272,12 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 
 - [Pacote geextract do Python](http://www.loicdutrieux.net/landsat-extract-gee/introduction.html)
 
-<img width="30%" src="https://miro.medium.com/max/1183/1*X_G7j5snaH4mRnTGLcNaQg.png"/>
+.center[<img width="30%" src="https://miro.medium.com/max/1183/1*X_G7j5snaH4mRnTGLcNaQg.png"/>]
 
 --
 - E tem esse outro tb:
 
-<img width="90%" src="https://repository-images.githubusercontent.com/245837930/2a99eb00-1dd2-11eb-94bb-98ee2b8f5cc3"/>
+.center[<img width="75%" src="https://repository-images.githubusercontent.com/245837930/2a99eb00-1dd2-11eb-94bb-98ee2b8f5cc3"/>]
 
 
 ---
@@ -303,7 +288,14 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 .center[<img width="90%" src="chirps.png"/>]
 
 https://www.nature.com/articles/sdata201566
+---
+# Mapbiomas
 
+[Mapbiomas](https://mapbiomas.org/)
+
+.center[<img width="50%" src="https://mapbiomas-br-site.s3.amazonaws.com/mapbiomas-brasil-logo-horizontal-v2.png"/>]
+
+.center[<img width="70%" src="https://mapbiomas-br-site.s3.amazonaws.com/Infograficos/Coleção6/MBI-Infografico-6.0-PTBR-brasil.jpg"/>]
 
 ---
 #  Campo vs Satélite
@@ -313,7 +305,7 @@ https://www.nature.com/articles/sdata201566
 .center[<img width = "30%" src="WhatsApp Image 2022-06-28 at 14.58.01.jpeg"/><img width="30%" src="WhatsApp Image 2022-06-28 at 14.58.01(1).jpeg"/>
 ]
 
-.center[<img width="530" src="Figure_2.png"/>]
+.center[<img width="65%" src="Figure_2.png"/>]
 
 ---
 # Obrigado pela atenção
