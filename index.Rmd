@@ -69,7 +69,7 @@ class: top, left
 - Formado por múltiplos elementos que interagem entre si.
 ]
 
-<img width="53%" src="https://evgenii.com/image/blog/2018-09-27-three-body-problem-simulator/010_coordinate_system.png"/>
+.center[<img width="50%" src="https://evgenii.com/image/blog/2018-09-27-three-body-problem-simulator/010_coordinate_system.png"/>]
 
 
 *Modelos lineares não levam em conta interações*
@@ -82,10 +82,10 @@ class: top, left
 - Henri Poincaré: Informações a respeito do comportamento e propriedades de sistemas complexos.
 
 .center[
-<img width="53%" src="https://www.researchgate.net/profile/Rodrigo-Ricco/publication/309002188/figure/fig11/AS:670116907851787@1536779729797/Figura-6-Secao-de-Poincare-do-atrator-do-circuito-de-Roessler-afim-por-partes-para-o.jpg"/>
+<img width="50%" src="https://www.researchgate.net/profile/Rodrigo-Ricco/publication/309002188/figure/fig11/AS:670116907851787@1536779729797/Figura-6-Secao-de-Poincare-do-atrator-do-circuito-de-Roessler-afim-por-partes-para-o.jpg"/>
 ]
 ---
-# Ecosystemas são sistemas complexos e dinâmicos!
+# Ecossitemas são sistemas complexos e dinâmicos!
 
 ### Resiliência ecológica: Conceito que ajuda a descrever e entender a dinâmica de sistemas complexos.
 
@@ -128,7 +128,7 @@ background-image: url("https://www.ecologyandsociety.org/vol17/iss4/art48/figure
 
 
 ---
-# Indicadores de resiliência
+# Indicadores de resiliência (série temporal)
 
 .center[<img width="70%" src="indicators.png"/>]
 
@@ -203,7 +203,7 @@ E se eu quiser estudar tipos de vegetação diferentes com densidade de árvores
 
 - Exemplo de preparação para marcar as árvores amostradas.
 
-<img width="50%" src="20210724_154346.jpg"/><img width="50%" src="IMG-20210724-WA0033.jpeg"/>
+<img width="40%" src="20210724_154346.jpg"/><img width="50%" src="IMG-20210724-WA0033.jpeg"/>
 ---
 # Coleta de solo para análise: Caracterizar ambiente
 
@@ -308,9 +308,9 @@ https://www.nature.com/articles/sdata201566
 
 
 ---
-# Obrigado pela atenção
+# Obrigado
 
-Laboratório IPES - Interdisciplinary Environmental Studies (Departamento de Física - UFSC)
+[Laboratório IPES - Interdisciplinary Environmental Studies (Departamento de Física - UFSC)](https://ipes.ufsc.br/)
 
 Email: <marciobcure@gmail.com>
 
